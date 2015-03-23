@@ -1,0 +1,4 @@
+# Dev environment files we don't need to share.
+.buildpath
+.project
+.settings/
