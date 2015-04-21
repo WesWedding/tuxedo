@@ -5,4 +5,4 @@
 
         <?php get_template_part('loop');?>
 
-<?php get_footer(); ?>
+<?php get_footer();
