@@ -24,9 +24,39 @@ body, a {
 	font-size: 9rem;
 }
 
+@-webkit-keyframes fade {
+    from {opacity: 0.0;}
+    to {opacity: 1.0;}
+}
+@keyframes fade {
+    from {opacity: 0.0;}
+    to {opacity: 1.0;}
+}
+
 .intro h2 {
     font-size: 5rem;
+    margin-left: 10%;
+    opacity: 0.0;
+    -webkit-animation: fade 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: fade 5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-fill-mode: forwards;
 }
+.intro h2:nth-child(3) {
+	 -webkit-animation-delay: 1s;
+	 -moz-animation-delay: 1s;
+}
+.intro h2:nth-child(4) {
+     -webkit-animation-delay: 2s;
+     -moz-animation-delay: 2s;
+}
+.intro h2:nth-child(5) {
+     -webkit-animation-delay: 3s;
+     -moz-animation-delay: 3s;
+}
+
 
 nav.main-navigation {
 	width: 100%;
