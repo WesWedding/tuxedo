@@ -6,11 +6,12 @@
 		<?php wp_head(); ?>
 	</head>
 <body <?php body_class(); ?>>
-  <header>
-      <?php wp_nav_menu(
-          array( 'container' => 'nav',
-            'theme_location' => 'main-nav',
-            'container_id' => 'bottom-navigation',
-            'container_class' => 'main-navigation horizontal',
-            'depth' => 'depth')); ?>
-  </header>
+    <header>
+        <?php wp_nav_menu(
+			 array( 'container' => 'nav',
+				'theme_location' => 'main-nav',
+				'container_id' => 'bottom-navigation',
+				'container_class' => 'main-navigation horizontal',
+				'depth' => 'depth')); ?>
+    </header>
+

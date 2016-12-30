@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<p>Index.php</p>
+    <p>Index.php</p>
 		<h1><?php bloginfo( 'name' ); ?></h1>
 		<h2><?php bloginfo( 'description' ); ?></h2>
 
