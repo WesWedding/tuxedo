@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file
+ * The template for displaying archive pages
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -8,23 +8,23 @@
  */
 
 get_header(); ?>
-	<p class="debug">File: Index.php</p>
+<p class="debug">Page: archive.php</p>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php
-		if ( have_posts() ) :
+		if ( have_posts() ) : ?>
 
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-
+			<header class="page-header">
 				<?php
-			endif;
+					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_description( '<div class="archive-description">', '</div>' );
+				?>
+			</header><!-- .page-header -->
 
-			get_template_part( 'template-parts/loop', get_post_format() );
-
+			<?php
+			/* Start the Loop */
+			get_template_part( 'template-parts/loop' );
 			the_posts_navigation();
 
 		else :
