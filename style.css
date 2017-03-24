@@ -32,7 +32,7 @@ Nicolas Gallagher and Jonathan Neal at http://necolas.github.io/normalize.css/
  */
 
 html {
-	font-family: sans-serif; /* 1 */
+	font-family: 'Open Sans', sans-serif; /* 1 */
 	line-height: 1.15; /* 2 */
 	-ms-text-size-adjust: 100%; /* 3 */
 	-webkit-text-size-adjust: 100%; /* 3 */
@@ -502,8 +502,22 @@ th {
 /* Typography
  ========================================================================== */
 
+html {
+	font-size: 16px;
+}
+
 p {
-	margin-bottom: 1.5em;
+	margin: 0 0 1em 0;
+	padding: 0 5%;
+}
+
+.type-post p {
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+.type-post {
+	line-height: 1.55;
 }
 
 dfn,
@@ -558,6 +572,28 @@ big {
 	font-size: 125%;
 }
 
+h1, h2, h3, h4 { font-weight: normal; margin: 0 0 0.625em 0; margin: 0 0 0.625rem 0;}
+
+h1 {
+	font-size: 1.4em;
+	font-size: 1.4rem;
+}
+h2 {
+	font-size: 1.8em;
+	font-size: 1.8rem;
+}
+h3 {
+	font-size: 1.6em;
+	font-size: 1.6rem;
+}
+h4 {
+	font-size: 1.2em;
+	font-size: 1.2rem;
+}
+
+.entry-title {
+	font-family: 'PT Serif', serif;
+}
 
 /*--------------------------------------------------------------
 # Elements
@@ -573,7 +609,7 @@ html {
 }
 
 body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+	background: black; /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote:before,
@@ -1000,6 +1036,17 @@ a:active {
 	margin: 0 0 1.5em;
 }
 
+.post header {
+	margin-bottom: 2.5em;
+	border-bottom: 2px solid white;
+	padding-bottom: 1em;
+}
+
+.entry-meta {
+	font-size: 0.8em;
+	font-size: 0.8rem;
+}
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
@@ -1119,30 +1166,9 @@ object {
 /**
  * Stuff
  */
-h1, h2, h3, h4 { font-weight: normal; margin: 0 0 0.625em 0; margin: 0 0 0.625rem 0;}
-
-h1 {
-	font-size: 2em;
-}
-h2 {
-	font-size: 1.8em;
-	font-size: 1.8rem;
-}
-h3 {
-	font-size: 1.6em;
-	font-size: 1.6rem;
-}
-h4 {
-	font-size: 1.2em;
-	font-size: 1.2rem;
-}
-
-body {
-	background: black;
-}
 
 body, a {
-	color: #fff;
+	color: #dafcff;
 }
 
 .clear { clear: both; }
