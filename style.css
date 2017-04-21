@@ -609,6 +609,7 @@ html {
 }
 
 body {
+	color: #dafcff;
 	background: black; /* Fallback for when there is no custom background color defined. */
 }
 
@@ -763,18 +764,13 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
-	color: royalblue;
-}
-
-a:visited {
-	color: purple;
-}
-
+a,
+a:visited,
 a:hover,
 a:focus,
-a:active {
-	color: midnightblue;
+a:active
+{
+	color: #889da0;
 }
 
 a:focus {
@@ -1183,10 +1179,6 @@ object {
 /**
  * Stuff
  */
-
-body, a {
-	color: #dafcff;
-}
 
 .clear { clear: both; }
 
