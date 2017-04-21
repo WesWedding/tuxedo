@@ -899,6 +899,23 @@ a:active {
 	text-align: right;
 	width: 50%;
 }
+.post-navigation .nav-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.post-navigation .nav-next .nav-icon {
+	margin-left: 1em;
+}
+
+.post-navigation .nav-previous .nav-icon {
+	margin-right: 1em;
+}
+
+.post-navigation .nav-title {
+	width: 100%;
+}
+
 
 /*--------------------------------------------------------------
 # Accessibility
