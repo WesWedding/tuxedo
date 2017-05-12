@@ -763,6 +763,7 @@ textarea {
 --------------------------------------------------------------*/
 
 #masthead {
+	background-color: #193c50;
 	display: flex;
 	height: 10em;
 	flex-direction: column;
