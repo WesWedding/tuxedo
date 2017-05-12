@@ -759,6 +759,71 @@ textarea {
 }
 
 /*--------------------------------------------------------------
+# Header / Site Branding
+--------------------------------------------------------------*/
+
+#masthead {
+	display: flex;
+	height: 10em;
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+#masthead, #masthead-filler {
+	height: 10em;
+}
+
+#masthead::after {
+	bottom: -5px;
+	box-shadow: inset 0 4px 8px -3px rgb(17, 17, 17);
+	content: "";
+	height: 5px;
+	left: 0px;
+	pointer-events: none;
+	position: absolute;
+	right: 0px;
+	width: 100%;
+	z-index: 1000;
+}
+
+.site-branding {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.site-header a {
+	text-decoration: none;
+}
+
+.logo {
+	height: 75%;
+	margin: 0 auto;
+}
+
+.logo svg{
+	display: block;
+	fill: #dafcff;;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.site-title, .site-description {
+	text-align: center;
+	display: none;
+}
+
+@media screen and (min-width: 37.5em) {
+	.site-title, .site-description {
+		display: block;
+	}
+}
+
+
+/*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -1017,6 +1082,7 @@ a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
