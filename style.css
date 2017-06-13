@@ -506,9 +506,13 @@ html {
 	font-size: 16px;
 }
 
+body {
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
 p {
 	margin: 0 0 1em 0;
-	padding: 0 5%;
 }
 
 .type-post p {
@@ -547,6 +551,10 @@ pre {
 	padding: 1.6em;
 }
 
+pre.prettyprint {
+	padding: 0.2em 0.7em;
+}
+
 code,
 kbd,
 tt,
@@ -554,6 +562,7 @@ var {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
+	white-space: pre-wrap;
 }
 
 abbr,
@@ -1109,6 +1118,11 @@ a:active {
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
+}
+
+.entry-content,
+.entry-summary {
+	padding: 0 5%;
 }
 
 .page-links {

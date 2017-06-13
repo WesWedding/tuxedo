@@ -99,6 +99,8 @@ add_action( 'widgets_init', 'wawco_tuxedo_widgets_init' );
  * Enqueue scripts and styles.
  */
 function wawco_tuxedo_scripts() {
+	// Theme picked for prettyfied code snippets comes first to allow overrides in style.css.
+	wp_enqueue_style( 'wawco-tuxedo-prettify-style', wawco_tuxedo_prettify_stylesheet() );
 	wp_enqueue_style( 'wawco-tuxedo-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'wawco-tuxedo-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
@@ -110,6 +112,12 @@ function wawco_tuxedo_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'wawco_tuxedo_scripts' );
+
+function wawco_tuxedo_prettify_stylesheet() {
+	$stylesheet_dir_uri = get_stylesheet_directory_uri();
+	$stylesheet_uri     = $stylesheet_dir_uri . '/tranquil-heart.min.css';
+	return $stylesheet_uri;
+}
 
 /**
  * Implement the Custom Header feature.
