@@ -41,14 +41,5 @@
 				<?php
 			endif; ?>
 		</div><!-- .site-branding -->
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'wawco-tuxedo' ); ?></button>
-			<?php wp_nav_menu(
-				 array( 'container' => 'nav',
-					'theme_location' => 'main-nav',
-					'container_id' => 'bottom-navigation',
-					'container_class' => 'main-navigation horizontal',
-					'depth' => 'depth')); ?>
-		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 	<div id="content" class="site-content">
