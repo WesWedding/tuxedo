@@ -8,7 +8,6 @@
  */
 
 get_header(); ?>
-	<p class="debug">This is the single.php file. </p>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

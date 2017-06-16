@@ -8,7 +8,6 @@
  */
 
 ?>
-<p class="debug">template part: loop.php</p>
 <?php
 while ( have_posts() ) : the_post();
 

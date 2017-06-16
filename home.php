@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-	<p class="debug">This is the home.php file.</p>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<h1><?php bloginfo( 'name' ); ?></h1>

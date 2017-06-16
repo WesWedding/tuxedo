@@ -643,8 +643,10 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 0 1.5em 0;
+	padding: 0;
 }
+
 
 ul {
 	list-style: disc;
@@ -652,6 +654,11 @@ ul {
 
 ol {
 	list-style: decimal;
+}
+
+li {
+	margin: 0 1em 0 1em;
+	padding-left: 1em;
 }
 
 li > ul,
