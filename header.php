@@ -15,8 +15,14 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Serif" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
 	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=8je9dYqK8p">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=8je9dYqK8p">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=8je9dYqK8p">
+	<link rel="manifest" href="/manifest.json?v=8je9dYqK8p">
+	<link rel="shortcut icon" href="/favicon.ico?v=8je9dYqK8p">
+	<meta name="theme-color" content="#193c50">
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -28,19 +34,14 @@
 			<div class="logo">
 				<?php get_template_part('svg/inline', 'logo.svg' ); ?>
 			</div>
-			<?php
-			if ( is_front_page() && is_home() ) : ?>
+			<div class="copy">
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-				<?php
-			endif; ?>
+				<?php $description = get_bloginfo( 'description', 'display' );
+				if ( $description || is_customize_preview() ) : ?>
+					<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+					<?php
+				endif; ?>
+			</div>
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
 	<div id="content" class="site-content">

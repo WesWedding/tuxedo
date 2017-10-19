@@ -601,7 +601,7 @@ h4 {
 }
 
 .entry-title {
-	font-family: 'PT Serif', serif;
+	font-family: 'Oswald', serif;
 }
 
 /*--------------------------------------------------------------
@@ -817,7 +817,8 @@ textarea {
 }
 
 .logo {
-	height: 75%;
+	height: 100%;
+	padding: 1.3em;
 	margin: 0 auto;
 }
 
@@ -836,6 +837,17 @@ textarea {
 @media screen and (min-width: 37.5em) {
 	.site-title, .site-description {
 		display: block;
+	}
+
+	.logo {
+		padding: 2.1em 1.8em;
+		margin: 0 auto;
+		height: 100%;
+		flex: 0 0 0;
+	}
+
+	.copy {
+		flex: 1;
 	}
 }
 
@@ -1108,7 +1120,8 @@ a:active {
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0 auto;
+	max-width: 41rem;
 }
 
 .byline,
