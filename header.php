@@ -17,12 +17,12 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
 	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=8je9dYqK8p">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=8je9dYqK8p">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=8je9dYqK8p">
-	<link rel="manifest" href="/manifest.json?v=8je9dYqK8p">
-	<link rel="shortcut icon" href="/favicon.ico?v=8je9dYqK8p">
-	<meta name="theme-color" content="#193c50">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#132025">
+	<meta name="theme-color" content="#132025">
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

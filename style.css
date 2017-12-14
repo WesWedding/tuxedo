@@ -619,7 +619,10 @@ html {
 
 body {
 	color: #dafcff;
-	background: black; /* Fallback for when there is no custom background color defined. */
+	background: rgb(208,228,247); /* Fallback for when there is no custom background color defined. */
+	background: -moz-linear-gradient(left, #001a28 0%, #062739 25%, #062739 75%, #001a28 100%);
+	background: -webkit-linear-gradient(left, #001a28 0%, #062739 25%,#062739 75%, #001a28 100%);
+	background: linear-gradient(to right, #001a28 0%,#062739 25%, #062739 75%,#001a28 100%);
 }
 
 blockquote:before,
@@ -678,6 +681,7 @@ dd {
 img {
 	height: auto; /* Make sure images are scaled correctly. */
 	max-width: 100%; /* Adhere to container width. */
+	display: block; /* Almost never going to be displaying these inline. */
 }
 
 figure {
@@ -780,6 +784,10 @@ textarea {
 
 #masthead {
 	background-color: #193c50;
+	background: -moz-linear-gradient(top, #193c50 95%, #14303f 100%);
+	background: -webkit-linear-gradient(top, #193c50 95%, #14303f 100%);
+	background: linear-gradient(to bottom, #193c50 95%, #14303f 100%)
+
 	display: flex;
 	height: 10em;
 	flex-direction: column;
@@ -1236,41 +1244,84 @@ object {
 
 .gallery-item {
 	display: inline-block;
+	margin: 0;
 	text-align: center;
 	vertical-align: top;
 	width: 100%;
 }
 
-.gallery-columns-2 .gallery-item {
-	max-width: 50%;
+.gallery-item img {
+	width: 100%;
 }
 
-.gallery-columns-3 .gallery-item {
-	max-width: 33.33%;
+.captioned-gallery > .gallery,
+.captioned-gallery .gallery-item {
+	background-color: #dafcff;
 }
 
-.gallery-columns-4 .gallery-item {
-	max-width: 25%;
+.captioned-gallery .gallery-item {
+	border-top: 1px solid rgba(0, 0, 0, 0.6);
+}
+.captioned-gallery .gallery-item:first-child {
+	border-top: none;
 }
 
-.gallery-columns-5 .gallery-item {
-	max-width: 20%;
+.captioned-gallery .gallery-item,
+.captioned-gallery > .gallery {
+	margin-bottom: 0;
 }
 
-.gallery-columns-6 .gallery-item {
-	max-width: 16.66%;
+.captioned-gallery > p {
+	display: none;
 }
 
-.gallery-columns-7 .gallery-item {
-	max-width: 14.28%;
+.captioned-gallery > figcaption {
+	border: 1px solid #dafcff;
+	border-top: none;
+	font-size: 0.8em;
+	padding: 0.8em 1.4em;
 }
 
-.gallery-columns-8 .gallery-item {
-	max-width: 12.5%;
-}
+@media screen and (min-width: 37.5em) {
+	.captioned-gallery .gallery-item {
+		border-top: none;
+		border-left: 1px solid rgba(0, 0, 0, 0.6);
+	}
+	.captioned-gallery .gallery-item:first-child {
+		border-left: none;
+	}
 
-.gallery-columns-9 .gallery-item {
-	max-width: 11.11%;
+	.gallery-columns-2 .gallery-item {
+		max-width: 50%;
+	}
+
+	.gallery-columns-3 .gallery-item {
+		max-width: 33.33%;
+	}
+
+	.gallery-columns-4 .gallery-item {
+		max-width: 25%;
+	}
+
+	.gallery-columns-5 .gallery-item {
+		max-width: 20%;
+	}
+
+	.gallery-columns-6 .gallery-item {
+		max-width: 16.66%;
+	}
+
+	.gallery-columns-7 .gallery-item {
+		max-width: 14.28%;
+	}
+
+	.gallery-columns-8 .gallery-item {
+		max-width: 12.5%;
+	}
+
+	.gallery-columns-9 .gallery-item {
+		max-width: 11.11%;
+	}
 }
 
 .gallery-caption {
