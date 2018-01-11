@@ -38,7 +38,8 @@ if ( ! function_exists( 'wawco_tuxedo_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'main-nav' => __( 'Main Nav Menu' )
+			'main-nav' => __( 'Main Nav Menu' ),
+			'footer-nav' => __( 'Footer Menu' )
 		) );
 
 		/*
