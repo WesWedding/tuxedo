@@ -620,9 +620,9 @@ html {
 body {
 	color: #dafcff;
 	background: rgb(208,228,247); /* Fallback for when there is no custom background color defined. */
-	background: -moz-linear-gradient(left, #001a28 0%, #062739 25%, #062739 75%, #001a28 100%);
-	background: -webkit-linear-gradient(left, #001a28 0%, #062739 25%,#062739 75%, #001a28 100%);
-	background: linear-gradient(to right, #001a28 0%,#062739 25%, #062739 75%,#001a28 100%);
+	background: -moz-linear-gradient(left, transparent 0%, #062739 25%, #062739 75%, transparent 100%);
+	background: -webkit-linear-gradient(left, transparent 0%, #062739 25%,#062739 75%, transparent 100%);
+	background: linear-gradient(to right, transparent 0%,#062739 25%, #062739 75%, transparent 100%);
 }
 
 blockquote:before,
