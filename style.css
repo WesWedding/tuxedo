@@ -503,7 +503,7 @@ th {
  ========================================================================== */
 
 html {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 body {
@@ -516,12 +516,15 @@ p {
 }
 
 .type-post p {
-	font-size: 18px;
-	font-size: 1.125rem;
+	font-size: 1rem;
 }
 
 .type-post {
 	line-height: 1.55;
+}
+
+.gallery-caption {
+	font-size: 0.8rem;
 }
 
 dfn,
@@ -542,7 +545,6 @@ address {
 pre {
 	background: #eee;
 	font-family: "Courier 10 Pitch", Courier, monospace;
-	font-size: 15px;
 	font-size: 0.9375rem;
 	line-height: 1.6;
 	margin-bottom: 1.6em;
@@ -560,7 +562,6 @@ kbd,
 tt,
 var {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-	font-size: 15px;
 	font-size: 0.9375rem;
 	white-space: pre-wrap;
 }
@@ -581,27 +582,29 @@ big {
 	font-size: 125%;
 }
 
-h1, h2, h3, h4 { font-weight: normal; margin: 0 0 0.625em 0; margin: 0 0 0.625rem 0;}
+h1, h2, h3, h4 { font-weight: normal; margin: 0 0 0.625em 0;}
 
 h1 {
-	font-size: 24px;
 	font-size: 1.5rem;
 }
 h2 {
-	font-size: 22.4px;
 	font-size: 1.4rem;
 }
 h3 {
-	font-size: 20.8px;
 	font-size: 1.3rem;
 }
 h4 {
-	font-size: 19.2px;
 	font-size: 1.2rem;
 }
 
 .entry-title {
 	font-family: 'Oswald', serif;
+}
+
+@media screen {
+	html {
+		font-size: 16px;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -1169,11 +1172,16 @@ a:active {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+.site-content {
+	padding-top: 3.5em;
+}
+
 .sticky {
 	display: block;
 }
 
-.hentry {
+.hentry, .comments-area,
+.nav-links {
 	margin: 0 auto;
 	max-width: 41rem;
 }
@@ -1195,7 +1203,9 @@ a:active {
 }
 
 .entry-content,
-.entry-summary {
+.entry-summary,
+.comment-respond,
+.nav-wrapper {
 	padding: 0 5%;
 }
 
@@ -1372,6 +1382,7 @@ object {
 
 .gallery-caption {
 	display: block;
+	padding: 0.6em 1.5em;
 }
 
 /**
