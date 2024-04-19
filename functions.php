@@ -116,10 +116,8 @@ function wawco_tuxedo_reject_author_page() {
     global $wp_query;
 
     if (is_author()) {
-        status_header(404);
-        nocache_headers();
-        include(get_query_template('404'));
-        die();
+        $wp_query->set_404();
+        status_header( 404 );
     }
 }
 add_action('wp', 'wawco_tuxedo_reject_author_page');
