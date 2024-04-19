@@ -112,6 +112,18 @@ function wawco_tuxedo_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'wawco_tuxedo_scripts' );
 
+function wawco_tuxedo_reject_author_page() {
+    global $wp_query;
+
+    if (is_author()) {
+        status_header(404);
+        nocache_headers();
+        include(get_query_template('404'));
+        die();
+    }
+}
+add_action('wp', 'wawco_tuxedo_reject_author_page');
+
 /**
  * Implement the Custom Header feature.
  */
