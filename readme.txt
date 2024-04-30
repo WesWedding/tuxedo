@@ -1,4 +1,4 @@
-=== WestonWedding Suit ===
+=== WW Suit ===
 Contributors: Weston Wedding
 Requires at least: 6.0
 Tested up to: 6.5
