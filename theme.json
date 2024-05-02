@@ -93,6 +93,11 @@
 						}
 					}
 				}
+			},
+			"core/post-title": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--oswald)"
+				}
 			}
 		},
 		"color": {
@@ -102,11 +107,6 @@
 		},
 		"css": ".masthead-shadow {\n\tposition: relative;\n}\n.masthead-shadow::after {\n\tbottom: -5px;\n\tbox-shadow: inset 0 4px 8px -3px rgb(17, 17, 17);\n\tcontent: \"\";\n\theight: 5px;\n\tleft: 0px;\n\tpointer-events: none;\n\tposition: absolute;\n\tright: 0px;\n\twidth: 100%;\n\tz-index: 1000;\n}",
 		"elements": {
-			"h2": {
-				"typography": {
-					"fontSize": "var(--wp--preset--font-size--large)"
-				}
-			},
 			"heading": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--oswald)",

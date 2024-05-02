@@ -22,7 +22,11 @@
 <hr class="wp-block-separator has-text-color has-white-color has-alpha-channel-opacity has-white-background-color has-background"/>
 <!-- /wp:separator -->
 
-<!-- wp:post-content /-->
+<!-- wp:group {"style":{"spacing":{"padding":{"right":"2rem","left":"2rem"},"margin":{"top":"1.5em","bottom":"1.5em"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="margin-top:1.5em;margin-bottom:1.5em;padding-right:2rem;padding-left:2rem">
+	<!-- wp:post-content /-->
+</div>
+<!-- /wp:group -->
 
 <!-- wp:group {"style":{"typography":{"fontSize":"14px"}},"layout":{"type":"flex"}} -->
 <div class="wp-block-group has-small-font-size" style="font-size:14px"><!-- wp:post-date {"format":"Y-m-d"} /-->
