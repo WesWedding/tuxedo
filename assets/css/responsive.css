@@ -1,0 +1,10 @@
+@media screen and (max-width: 37.5em) {
+	header .wwsuit-copy-group,
+	header .wp-block-spacer {
+		display: none;
+	}
+
+	body header .wwsuit-logo-group {
+		margin: 0 auto;
+	}
+}

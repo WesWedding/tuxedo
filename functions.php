@@ -6,6 +6,29 @@
  */
 
 /**
+ * Enqueue global stylesheet.
+ */
+
+if ( ! function_exists( 'wwsuit_responsive_styles' ) ) :
+	/**
+	 * Enqueue custom global stylesheet.
+	 *
+	 * @return void
+	 */
+	function wwsuit_responsive_styles() {
+		wp_enqueue_style(
+			'wwsuit-responsive-style',
+			get_parent_theme_file_uri( 'assets/css/responsive.css' ),
+			array(),
+			wp_get_theme( get_template() )->get( 'Version' ),
+			'screen'
+		);
+	}
+endif;
+
+add_action( 'init', 'wwsuit_responsive_styles' );
+
+/**
  * Register pattern categories.
  */
 
