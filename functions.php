@@ -40,7 +40,7 @@ if ( ! function_exists( 'wwsuit_register_pattern_categories' ) ) :
 	 */
 	function wwsuit_register_pattern_categories() {
 		register_block_pattern_category(
-			'wwsuit',
+			'wwsuit-theme',
 			array(
 				'label'       => _x( 'WWSuit Theme', 'Block pattern category', 'wwsuit' ),
 				'description' => __( 'A collection of patterns provided by this theme.', 'wwsuit' ),
