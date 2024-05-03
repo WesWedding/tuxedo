@@ -12,8 +12,10 @@ The fancy clothing WestonWedding.com wears to work
 
 == Changelog ==
 
-= 1.0.0 =
-* Initial release
+= 2.0.0 =
+* Released: May 3, 2024
+
+The "Wawco Tuxedo" Classic theme has been upgraded to the "WW Suit" Block Theme, warts and all.
 
 == Copyright ==
 
