@@ -83,6 +83,11 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/post-title": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--oswald)"
+				}
+			},
 			"core/site-title": {
 				"elements": {
 					"link": {
@@ -92,11 +97,6 @@
 							"textDecoration": "none"
 						}
 					}
-				}
-			},
-			"core/post-title": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--oswald)"
 				}
 			}
 		},
